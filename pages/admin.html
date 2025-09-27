@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Control</title>
+    <link rel="stylesheet" href="/microscopio/css/admin.css">
+    <!-- Fuente de iconos (opcional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Barra lateral -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Panel Admin</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active"><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="/microscopio/pages/upload.html"><i class="fas fa-file-upload"></i> Cargar muestra</a></li>
+
+                    <li><a href="#"><i class="fas fa-sign-out-alt"></i> Salir</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Contenido principal -->
+        <main class="main-content">
+            <!-- Encabezado -->
+            <header class="header">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Buscar...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="user-info">
+                
+                    <div class="user">
+                        <img src="/microscopio/images/user.png" alt="Usuario">
+                        <span>Admin</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Contenido del dashboard -->
+            <div class="dashboard-content">
+                <h1>Panel de Control</h1>
+                
+                <!-- Tarjetas de estadísticas -->
+                <div class="stats-cards">
+                    <div class="card">
+                        <div class="card-icon blue">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="card-info">
+                            <h3>Usuarios</h3>
+                            <p>1,254</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon green">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="card-info">
+                            <h3>Ventas</h3>
+                            <p>$12,543</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon orange">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="card-info">
+                            <h3>Informes</h3>
+                            <p>45</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon purple">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="card-info">
+                            <h3>Mensajes</h3>
+                            <p>28</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gráfico y tabla -->
+                <div class="chart-table-container">
+                    <!-- Gráfico simple -->
+                    <div class="chart-container">
+                        <h2>Estadísticas Mensuales</h2>
+                        <div class="chart">
+                            <div class="chart-bar" style="height: 60%;" data-label="Ene"></div>
+                            <div class="chart-bar" style="height: 80%;" data-label="Feb"></div>
+                            <div class="chart-bar" style="height: 65%;" data-label="Mar"></div>
+                            <div class="chart-bar" style="height: 90%;" data-label="Abr"></div>
+                            <div class="chart-bar" style="height: 75%;" data-label="May"></div>
+                            <div class="chart-bar" style="height: 85%;" data-label="Jun"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tabla de datos recientes -->
+                    <div class="table-container">
+                        <h2>Actividad Reciente</h2>
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Usuario</th>
+                                    <th>Actividad</th>
+                                    <th>Fecha</th>
+                                    <th>Estado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Juan Pérez</td>
+                                    <td>Compra realizada</td>
+                                    <td>12/05/2023</td>
+                                    <td><span class="status completed">Completado</span></td>
+                                </tr>
+                                <tr>
+                                    <td>María López</td>
+                                    <td>Nuevo registro</td>
+                                    <td>11/05/2023</td>
+                                    <td><span class="status pending">Pendiente</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Carlos Ruiz</td>
+                                    <td>Actualización de perfil</td>
+                                    <td>10/05/2023</td>
+                                    <td><span class="status completed">Completado</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Ana Gómez</td>
+                                    <td>Solicitud de soporte</td>
+                                    <td>09/05/2023</td>
+                                    <td><span class="status processing">En proceso</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <!-- Acciones rápidas -->
+                <div class="quick-actions">
+                    <h2>Acciones Rápidas</h2>
+                    <div class="actions-container">
+                        <button class="action-btn"><i class="fas fa-plus"></i> Nuevo Usuario</button>
+                        <button class="action-btn"><i class="fas fa-file-export"></i> Exportar Datos</button>
+                        <button class="action-btn"><i class="fas fa-cog"></i> Configuración</button>
+                        <button class="action-btn"><i class="fas fa-question-circle"></i> Ayuda</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

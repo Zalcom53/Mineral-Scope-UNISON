@@ -1,0 +1,198 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Sección de carga */
+.upload-section {
+    margin-bottom: 3rem;
+}
+
+.upload-section h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.upload-section h2:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #4a6cf7;
+}
+
+/* Tarjeta de carga */
+.upload-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.upload-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.upload-info {
+    padding: 1.5rem;
+    flex-grow: 1;
+}
+
+/* Área de carga de archivos */
+.file-upload-area {
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.file-upload-area:hover {
+    border-color: #4a6cf7;
+    background-color: rgba(74, 108, 247, 0.05);
+}
+
+.file-upload-area.dragging {
+    border-color: #4a6cf7;
+    background-color: rgba(74, 108, 247, 0.1);
+}
+
+.upload-icon {
+    margin-bottom: 1rem;
+}
+
+.upload-svg {
+    color: #999;
+    transition: color 0.3s ease;
+}
+
+.file-upload-area:hover .upload-svg {
+    color: #4a6cf7;
+}
+
+.upload-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.file-info {
+    font-size: 0.875rem;
+    color: #4a6cf7;
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+
+/* Campos del formulario */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #4a6cf7;
+    box-shadow: 0 0 0 2px rgba(74, 108, 247, 0.2);
+}
+
+/* Botones */
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    background-color: #4a6cf7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #3a5bd9;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .upload-info {
+        padding: 1.25rem;
+    }
+    
+    .file-upload-area {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .upload-info {
+        padding: 1rem;
+    }
+    
+    .file-upload-area {
+        padding: 1rem;
+    }
+    
+    .upload-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    button {
+        padding: 0.6rem 1.2rem;
+    }
+}

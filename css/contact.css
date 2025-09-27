@@ -1,0 +1,214 @@
+/* Estilos específicos para la página de contacto */
+
+/* Tarjetas de contacto */
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .contact-info {
+    padding: 1.5rem;
+    flex-grow: 1;
+  }
+  
+  .contact-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+    border-bottom: 2px solid #4a6cf7;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+  }
+  
+  .contact-info p {
+    margin-bottom: 0.5rem;
+    color: #666;
+  }
+  
+  .contact-info a {
+    color: #4a6cf7;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-info a:hover {
+    color: #3a5bd9;
+    text-decoration: underline;
+  }
+  
+  /* Sección de contacto */
+  .contact-section {
+    margin-bottom: 3rem;
+  }
+  
+  .contact-section h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  
+  .contact-section h2:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #4a6cf7;
+  }
+  
+  /* Sección del departamento */
+  .department-section {
+    margin-bottom: 3rem;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .department-section h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  
+  .department-section h2:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #4a6cf7;
+  }
+  
+  .department-info {
+    margin-top: 1.5rem;
+  }
+  
+  .department-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+    border-bottom: 2px solid #4a6cf7;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+  }
+  
+  .department-info p {
+    margin-bottom: 0.5rem;
+    color: #666;
+  }
+  
+  /* Estilos para el contenedor de email y botón de copiar */
+  .email-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  
+  /* Estilos para el botón de copiar */
+  .copy-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 8px;
+    padding: 4px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    transition: all 0.2s ease;
+  }
+  
+  .copy-btn:hover {
+    background-color: #f0f0f0;
+    color: #4a6cf7;
+  }
+  
+  .copy-btn:active {
+    transform: scale(0.95);
+  }
+  
+  /* Estilos para el tooltip de copiado */
+  .copy-tooltip {
+    position: absolute;
+    background-color: #333;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    right: 0;
+    top: -25px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+  
+  .copy-tooltip.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .department-section {
+      padding: 1.5rem;
+    }
+  
+    .card-container {
+      gap: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-info,
+    .department-info {
+      padding: 1rem;
+    }
+  
+    .email-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .copy-btn {
+      margin-left: 0;
+      margin-top: 5px;
+    }
+  
+    .copy-tooltip {
+      top: auto;
+      bottom: -25px;
+      right: auto;
+      left: 0;
+    }
+  }
+  
+  .footer-logo img {
+    max-width: 90px;
+    height: auto;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f5f5f5;
+    margin-top: 40px;
+  }
+

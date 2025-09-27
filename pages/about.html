@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mineral Scope | Acerca</title>
+    <link rel="icon" href="/microscopio/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/microscopio/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="/microscopio/index.html">Mineral<span>Scope</span></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/microscopio/index.html" class="nav-link">Inicio</a></li>
+                <li><a href="about.html" class="nav-link active">Acerca</a></li>
+                <li><a href="/microscopio/pages/muestras.html" class="nav-link">Muestras</a></li>
+                <li><a href="/microscopio/pages/contact.html" class="nav-link">Contacto</a></li>
+                <li><a href="/microscopio/pages/login.html" class="nav-link user-icon">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNpcmNsZS11c2VyLXJvdW5kLWljb24gbHVjaWRlLWNpcmNsZS11c2VyLXJvdW5kIj48cGF0aCBkPSJNMTggMjBhNiA2IDAgMCAwLTEyIDAiLz48Y2lyY2xlIGN4PSIxMiIgY3k9IjEwIiByPSI0Ii8+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiLz48L3N2Zz4=" alt="Usuario">
+                </a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Acerca de Mineral Scope</h1>
+            <p>Una herramienta para la visualización y análisis de muestras geológicas</p>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section">
+            <div class="about-container">
+                <div class="about-content">
+                    <h2>Mineral Scope</h2>
+                    <p>Mineral Scope es una aplicación desarrollada como parte de un proyecto académico de la Universidad de Sonora, bajo la Licenciatura en Ciencias de la Computación. El objetivo principal del proyecto es facilitar la visualización y análisis de muestras geológicas, proporcionando una herramienta intuitiva y accesible para investigadores, docentes y estudiantes.</p>
+                    
+                    <h3>Descripción</h3>
+                    <p>El sistema permite la visualización de muestras geológicas mediante una interfaz gráfica amigable, permitiendo observar características específicas de los minerales, posiblemente integrando datos como imágenes, propiedades físicas y ubicación de hallazgo.</p>
+                    <p>Este proyecto busca servir como una plataforma de consulta interactiva en el ámbito de la geología aplicada.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section">
+            <h2>Equipo</h2>
+            <div class="card-container">
+                <div class="card team-card">
+                    <div class="card-image">
+                        <a href="https://academicos.uson.mx/cvu/adrian-vazquez" target="_blank" title="Ver perfil académico del Dr. Adrián Vázquez Osorio">
+                            <img src="/microscopio/images/adrian.jpeg" alt="Dr. Adrián Vázquez Osorio">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3>Dr. Adrián Vázquez Osorio</h3>
+                        <p>Responsable del proyecto</p>
+                    </div>
+                </div>
+                <div class="card team-card">
+                    <div class="card-image">
+                        <a href="https://www.linkedin.com/in/daniel-quihuis-hernandez-262409211/" target="_blank" title="Ver perfil de LinkedIn de Daniel Antonio Quihuis Hernández">
+                            <img src="/microscopio/images/daniel.jpg" alt="Daniel Antonio Quihuis Hernández">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3>Daniel Antonio Quihuis Hernández</h3>
+                        <p>Desarrollador</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Institution Section -->
+        <section class="institution-section">
+            <h2>Institución</h2>
+            <div class="institution-content">
+                <p>Proyecto desarrollado en la Universidad de Sonora, como parte del programa de Licenciatura en Ciencias de la Computación.</p>
+                <p>Este proyecto forma parte del compromiso académico con la investigación y desarrollo de herramientas tecnológicas aplicadas a las ciencias de la Tierra.</p>
+                
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">
+            <img src="/microscopio/images/unison-logo.png" alt="Logo UNISON">
+        </div>
+        <p>&copy; 2025 Mineral Scope. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

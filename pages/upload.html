@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <title>Mineral Scope | Subir muestra</title>
+    <link rel="stylesheet" href="/microscopio/css/upload.css">
+</head>
+<body>
+    <div class="container">
+        <div class="upload-section">
+            <h2>Carga de Archivo</h2>
+            
+            <div class="upload-card">
+                <div class="upload-info">
+                    <form id="uploadForm">
+                        <!-- Área de carga de archivos -->
+                        <div class="file-upload-area" id="dropArea">
+                            <input type="file" id="fileUpload" hidden>
+                            <div class="upload-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="upload-svg">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="17 8 12 3 7 8"/>
+                                    <line x1="12" x2="12" y1="3" y2="15"/>
+                                </svg>
+                            </div>
+                            <p class="upload-text">Arrastra y suelta tu archivo aquí o haz clic para seleccionar</p>
+                            <p class="file-info" id="fileInfo"></p>
+                        </div>
+                        
+                        <!-- Campo de nombre -->
+                        <div class="form-group">
+                            <label for="nombre">Nombre de la muestra</label>
+                            <input type="text" id="muestraName" name="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        
+                        <!-- Botón de envío -->
+                        <div class="form-actions">
+                            <button type="submit" id="submitBtn" disabled>Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/microscopio/js/upload.js"></script>
+</body>
+</html>
